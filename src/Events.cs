@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EpsonProjectorEpi
+namespace PJLinkProjectorEpi
 {
     public static class Events
     {
@@ -21,7 +21,12 @@ namespace EpsonProjectorEpi
 
         public class VideoInputEventArgs : EventArgs
         {
-            public VideoInputHandler.VideoInputStatusEnum Input { get; set; }
+            public uint Input { get; set; }
+        }
+
+        public class StringEventArgs : EventArgs
+        {
+            public string Val { get; set; }
         }
     }
 }
